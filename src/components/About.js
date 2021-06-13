@@ -6,7 +6,7 @@ function About(props) {
   console.log(user.links)
 
   function bioLetter(){
-    if(props.bio != ""  || props.bio){
+    if(props.bio != "" && props.bio){
       return (
         <p>{props.bio}</p>
       )
@@ -21,7 +21,7 @@ function About(props) {
       {bioLetter()}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       {/* add your <Links /> component here */}
-      <Links github={user.links.github} linkined={user.links.linkedin}/>
+      <Links github={props.links.github} linkedin={props.links.linkedin}/>
     </div>
   );
 }

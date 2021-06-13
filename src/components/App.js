@@ -12,7 +12,7 @@ function App() {
     <div>
       <NavBar />
       <Home  username={user.name} city={user.city}  color={user.color}/>
-      <About bio={user.bio} github={user.links} />
+      <About bio={user.bio} links={user.links} />
 
     </div>
   );
