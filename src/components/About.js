@@ -21,7 +21,7 @@ function About(props) {
       {bioLetter()}
       <img src="https://i.imgur.com/mV8PQxj.gif" alt="I made this" />
       {/* add your <Links /> component here */}
-      <Links />
+      <Links github={user.links.github} linkined={user.links.linkedin}/>
     </div>
   );
 }
